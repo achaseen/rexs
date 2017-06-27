@@ -2,4 +2,8 @@
   width: 10620%; }
 
 body {
-  background: purple; }
+  background: white; }
+  body h1 {
+    color: purple; }
+  body h2 {
+    font-size: 1px; }
