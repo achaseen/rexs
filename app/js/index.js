@@ -1,4 +1,8 @@
-$(document).ready(function() {
-    console.log($("body"));
-    $("body").append("hello");
-})
+$(window).scroll(function() {
+    if ($(this).scrollTop() > $("#header").height()) {
+        $("#header").addClass("highlight");
+    }
+    else {
+      $("#header").removeClass("highlight")
+    }
+});

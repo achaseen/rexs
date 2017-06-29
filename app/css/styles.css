@@ -1,9 +1,110 @@
-.testing {
-  width: 10620%; }
+html, body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1em; }
 
-body {
-  background: white; }
-  body h1 {
-    color: purple; }
-  body h2 {
-    font-size: 1px; }
+h3 {
+  font-size: 1.5em; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  color: #CE5B00;
+  text-decoration: none; }
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.logo {
+  color: #CE5B00; }
+
+.text-md {
+  font-size: 1.2em;
+  letter-spacing: 0.5px; }
+
+.bold {
+  font-weight: bold; }
+
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.pt-5 {
+  padding-top: 5px; }
+
+#primary-wrapper {
+  background-image: url("../../images/blue_vinyl.jpg");
+  height: 500px;
+  background-position: center 60%;
+  background-size: 100% auto;
+  color: #fff; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+#header.highlight {
+  background-color: rgba(0, 8, 34, 0.95);
+  border-bottom: 2px solid #fff; }
+
+#header .content {
+  padding: 10px 0; }
+
+#header .logo {
+  font-size: 2em; }
+
+#header .navbar {
+  margin: 0; }
+
+#header .nav a, #header .nav a.active {
+  background: none;
+  color: #fff; }
+
+#header .nav li a:hover {
+  background: none; }
+
+#header .nav li:not(.active) a:hover {
+  color: #CE5B00; }
+
+#header .icon-bar {
+  background-color: #fff; }
+
+#page {
+  padding: 20px 15px; }
+
+#footer {
+  background-color: #000822;
+  color: #d3d9de; }
+
+#footer a {
+  color: #93adc3; }
+
+#footer a:hover {
+  color: #CE5B00; }
+
+#footer .logo {
+  font-size: 1.5em; }
+
+#footer .social-icons a {
+  font-size: 1.8em;
+  padding-right: 20px; }
+
+#footer .social-icons a.facebook:hover {
+  color: #3b5998; }
+
+#footer .social-icons a.instagram:hover {
+  color: #bc2a8d; }
+
+#footer .social-icons a.twitter:hover {
+  color: #00aced; }
