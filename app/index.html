@@ -6,78 +6,109 @@
 <title>Rexs Customs</title>
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="./css/styles.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
 
 <body>
+<div id="wrapper">
+	
+	<nav class="sidenav">
+	  <a href="#" id="menu-close">&times;</a>
+	  <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+	  <a href="#about" aria-controls="contact" role="tab" data-toggle="tab">About</a>
+	  <a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a>
+	  <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
+	</nav>
 
-<div id="primary-wrapper">
-  <div id="header">
-    <div class="content">
-      <nav class="navbar">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand logo" href="#">Logo Rexs Customs</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
-            <li><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
+	<div id="page">
+
+		<div id="header">
+			<div id="header-content">
+				<span id="menu-icon" class="visible-xs">&#9776;</span>
+				<a class="logo col-xs-8" href="#">Rexs Customs</a>
+				<nav class="topnav hidden-xs col-xs-8">
+					<ul>
+					  <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+					  <li><a href="#about" aria-controls="contact" role="tab" data-toggle="tab">About</a></li>
+					  <li><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
+					  <li><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div id="content" class="tab-content">
+			<div role="tabpanel" class="tab-pane fade in active" id="home">
+				<div id="header-bg"></div>
+				<div id="cover-text-wrapper">
+					<div id="cover-text">
+						<h2>Cover Photo Title</h2>
+						<p>We make cars look amazing by applying vehicle wraps which can simulate a new paint job. This type of vehicle wrap job often includes custom designs or standardized single colors.</p>
+					</div>
+				</div>
+				<div class="w-max pt-0">
+					<h2>HOME</h2>
+					<p>Our wraps extend beyond the vehicle canvas they sit upon. Vehicle Wraps SF can change your car, truck, van, or other vehicle in a variety of ways. Whether you want the appearance of a new paint job, you want to advertise your brick and mortar company in a cool way. Our team can apply custom graphics, simulated paint jobs, and even matte black, matte white, or carbon fiber vinyl wraps.</p>
+					<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+					<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+					<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+					<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade w-max" id="about">
+				<h2>About Us</h2>
+				<p>Vehicle Wraps San Francisco is run and operated by Vinyl Wraps for Cars and provides professional car, truck, and other vinyl wraps. Vehicle Wraps SF can cover virtually any type of vehicle, and can incorporate custom graphics, simulated paint jobs, and even matte black or matte white wraps. Our team takes your vehicle wrap job very seriously. The success of your project is our primary concern. We do everything possible to satisfy your needs.</p>
+				<h2>Why Choose Us</h2>
+				<p>The Vehicle Wraps team has a number of years of experience working with vinyl wrapping. Each member is well-trained and knows how to make your vehicle wrap job go off without a hitch. We will work closely with you to figure out exactly what you want, and create the vehicle wrap you are dreaming of. Trust our team to complete your project because our team is the best! We are prepared for projects of any size, so don’t hesitate to submit your inquiry! Contact us now and our team can start you on a project which can change the way you market to your customers!</p>
+				<h2>About Us</h2>
+				<p>Vehicle Wraps San Francisco is run and operated by Vinyl Wraps for Cars and provides professional car, truck, and other vinyl wraps. Vehicle Wraps SF can cover virtually any type of vehicle, and can incorporate custom graphics, simulated paint jobs, and even matte black or matte white wraps. Our team takes your vehicle wrap job very seriously. The success of your project is our primary concern. We do everything possible to satisfy your needs.</p>
+				<h2>Why Choose Us</h2>
+				<p>The Vehicle Wraps team has a number of years of experience working with vinyl wrapping. Each member is well-trained and knows how to make your vehicle wrap job go off without a hitch. We will work closely with you to figure out exactly what you want, and create the vehicle wrap you are dreaming of. Trust our team to complete your project because our team is the best! We are prepared for projects of any size, so don’t hesitate to submit your inquiry! Contact us now and our team can start you on a project which can change the way you market to your customers!</p>
+			</div>
+			<div role="tabpanel" class="tab-pane fade w-max" id="gallery">
+				<h2>Gallery</h2>
+				<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+			</div>
+			<div role="tabpanel" class="tab-pane fade w-max" id="contact">
+				<h2>Contact</h2>
+				<p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer-content">
+				<div class="col-sm-8">
+					<div class="col-sm-8 px-0">
+						<div class="logo">Rexs Customs</div>
+						<p class="text-xs">Vehicle Wraps San Francisco offers a wide variety vinyl wraps. We are believed by many to provide the top car wraps SF individuals can find.</p>
+						<div class="footer-links">
+							<a href="#gallery">Gallery</a>
+							<span class="text-divider">&bullet;</span>
+							<a href="#contact">Contact Us</a>
+						</div>
+					</div>
+					<div class="col-sm-4 px-0"></div>
+				</div>
+				<div class="col-sm-4 footer-social">
+					<div class="text-md pt-5 bold">Follow Us</div>
+				    <div class="social-icons">
+				      <a href="" class="facebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+				      <a href="" class="instagram" title="instagram"><i class="fa fa-instagram"></i></a>
+				      <a href="" class="twitter" title="twitter"><i class="fa fa-twitter"></i></a>
+		    		</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
-
-<div id="page" class="content row">
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="home">
-      <p>HOME</p>
-      <p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
-      <p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="gallery">
-      <p>Gallery</p>
-      <p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p>
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="contact">
-      <p>Contact</p>
-      <p>Lorem ipsum dolor sit amet, faucibus accumsan tellus nostrud lectus, quisque a suspendisse erat sodales morbi distinctio, duis dignissim ac vivamus, pede wisi diam et turpis ornare sed. Vitae lacinia, sed wisi magna dui eget felis lacus. Proin sociis lacinia eleifend in rutrum. Vitae vel donec nunc, faucibus et laoreet ultricies venenatis, leo a lectus, nibh nullam, augue lacus nec semper turpis non sodales. Wisi et vestibulum, enim amet sodales eu.</p></div>
-  </div>
-</div>
-
-<div id="footer">
-  <div class="content row">
-    <div class="col-xs-9">
-      <div class="logo col-sm-7 py-5">Logo Rexs Customs</div>
-      <div class=" col-sm-5">
-        <div class="text-md pt-5 bold">Follow Us</div>
-        <div class="social-icons py-5">
-          <a href="" class="facebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-          <a href="" class="instagram" title="instagram"><i class="fa fa-instagram"></i></a>
-          <a href="" class="twitter" title="twitter"><i class="fa fa-twitter"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-3">
-      <div class="py-5"><a href="#gallery">Gallery</a></div>
-      <div class="py-5"><a href="#contact">Contact Us</a></div>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>
