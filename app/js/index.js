@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#overlay").show();
   });
 
-  $(".sidenav a").click(function() {
+  $(".sidenav a, #overlay").click(function() {
     $(".sidenav").css("width", "0");
     $("#overlay").hide();
   });
