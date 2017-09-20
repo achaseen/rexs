@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 400) {
+    if ($(this).scrollTop() > 435) {
         $("#header").addClass("highlight");
         //$("#cover-bg-wrapper").css("margin-top", $("#header").height());
     }
@@ -10,6 +10,9 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
+
+  $("#cover-text-wrapper, #title-text-wrapper").addClass("appear");
+
   $("#menu-icon").click(function() {
     $(".sidenav").css("width", "250px");
     $("#overlay").show();

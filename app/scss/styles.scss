@@ -1,8 +1,8 @@
-$light-grey: #f0f0f0;
-$medium-grey: #ccc;
+$light-grey: #eee;
 $dark-grey: #333;
- 
-$light-main: #f8f8fd;
+
+$xlight-main: #f7f5fe;
+$light-main: #7262ad;
 $medium-main: #6854b2;
 $dark-main: #130936;
 
@@ -19,7 +19,7 @@ html {
   font-size: 1em;
   line-height: 1.5em;
   font-family: 'Open Sans', sans-serif;
-  color: #555;
+  color: $dark-grey;
 }
 
 body {
@@ -42,8 +42,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
-  margin: 20px 0 10px;
+  font-size: 1.3em;
+  margin: 20px 0 15px;
   font-weight: 400;
   color: $medium-main;
 }
@@ -59,16 +59,16 @@ p {
   font-size: 0.9em;
   line-height: 1.8em;
   font-family: 'Open Sans', sans-serif;
-  color: #555;
+  color: $dark-grey;
   margin: 10px 0 20px;
 }
 
 a {
   text-decoration: none;
-  color: $light-main;
+  color: $medium-main;
   &:hover {
     text-decoration: none;
-    color: $medium-main;
+    color: $dark-main;
   }
 }
 
@@ -82,13 +82,13 @@ a {
 }
 
 .logo-icon {
-  background-image: url(../../images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 190px;
-  height: 42px;
+  height: 39px;
   filter: invert(1) brightness(100);
 }
 
@@ -107,14 +107,21 @@ a {
 }
 
 .w-max {
-  padding: 0px 10px;
+  padding: 0px 20px;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.w-med {
+  padding: 0px 20px;
+  box-sizing: border-box;
+  max-width: 750px;
   margin: 0 auto;
 }
 
 .color-section {
-  background-color: $light-main;
+  background-color: $xlight-main;
   padding: 20px 0;
   margin: 20px 0 0;
 }
@@ -190,6 +197,10 @@ a {
   padding-left: 10px;
 }
 
+.pl-20 {
+  padding-left: 20px;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -208,9 +219,10 @@ a {
   border-radius: 40px;
   color: $light-grey;
   white-space: nowrap;
+  transition: 0.5s;
 }
 .btn:hover {
-  background-color: $medium-main;
+  background-color: $light-main;
   color: #fff;
 }
 
@@ -242,6 +254,46 @@ a {
 
 .form-column {
   padding-right: 50px;
+}
+
+.mission-image {
+  background-image: url(../images/cn_tower_side.jpg);
+  min-height: 350px;
+  background-position: 0px 40%;
+  background-size: 100% auto;
+  margin: 20px 0 0;
+  .bg {
+    background-color: rgba(255, 255, 255, 0.75);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes popup-appear {
+    from {opacity: 0; top: 30px;}
+    to {opacity: 1; top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes popup-appear {
+    from {opacity: 0; top: 30px;}
+    to {opacity: 1; top: 0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes popup-appear-small {
+    from {opacity: 0; top: 10px;}
+    to {opacity: 1; top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes popup-appear-small {
+    from {opacity: 0; top: 10px;}
+    to {opacity: 1; top: 0px;}
 }
 
 input[type=text], textarea {
@@ -308,8 +360,9 @@ input[type=submit] {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    margin: 0 40px;
-    padding: 10px 0;
+    margin: 0 auto;
+    padding: 15px 20px;
+    max-width: 1100px;
   }
   &.highlight {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.24);
@@ -320,19 +373,20 @@ input[type=submit] {
     left: 0;
     right: 0;
     #header-content {
-      border-bottom: 0;
+      padding: 10px 20px;
     }
     .logo-icon {
       filter: none;
     }
     nav.topnav {     
       a {
-        color: $medium-main;
+        color: $dark-main;
         &:hover {
-          color: $dark-main; 
+          color: $medium-main; 
         }
         &.active {
-          color: $dark-main; 
+          color: $medium-main; 
+          border-bottom: 1px solid $medium-main; 
         }
       }
     }
@@ -391,7 +445,7 @@ input[type=submit] {
   position: relative;
 }
 #cover-bg-wrapper {
-  background-image: url("../../images/wrapped-car.jpg");
+  background-image: url(../images/wrapped-car.jpg);
   background-position: center 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -399,16 +453,23 @@ input[type=submit] {
   margin: 0px 0 20px;
   #cover-bg {
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     #cover-text-wrapper {
-      max-width: 1200px;
+      max-width: 1100px;
       padding: 0 15px;
       width: 100%;
       margin: 0 auto;
       color: #fff;
       text-align: center;
+      position: relative;
+      &.appear {
+        animation-name: popup-appear;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+      }
       h2 {
         font-size: 2.4em;
         line-height: 1.3em;
@@ -443,48 +504,54 @@ input[type=submit] {
   }
 }
 #title-bg-wrapper {
-  background-image: url(../../images/wrap-1.jpg);
+  background-image: url(../images/vinyl.jpg);
   background-position: center 65%;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  margin: 0px 0 10px;
+  margin: 0px;
   #title-bg {
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     #title-text-wrapper {
-      max-width: 1200px;
+      max-width: 1100px;
       padding: 0 15px;
       width: 100%;
-      margin: 0 auto;
+      margin: 0px auto;
       text-shadow: 3px 3px 6px #000;
       color: #fff;
       text-align: center;
+      position: relative;
+      &.appear {
+        animation-name: popup-appear-small;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+      }
       h1 {
-        font-size: 2.4em;
+        font-size: 1.9em;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-weight: 400;
+        letter-spacing: 1.2px;
       }
     }
   }
 }
+
+/*
 #gallery {
   #title-bg-wrapper {
-    background-image: none;
-    #title-bg {
-      background-color: $dark-main;
-    }
+    background-image: url(../images/vinyl.jpg);
   }
 }
 #contact {
   #title-bg-wrapper {
-    background-image: url(../images/wrap-3.jpg);
-    background-position: center 70%;
+    background-image: url(../images/vinyl.jpg);
   }
-}
+}*/
 
 .contact-row {
   display: block;
@@ -503,14 +570,14 @@ input[type=submit] {
   text-align: center;
   #footer-content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 35px;
+    padding: 20px 20px;
     box-sizing: border-box;
     display: inline-block;
     text-align: left;
     .logo-icon {
-      width: 150px;
+      width: 160px;
       height: 38px;
     }
     p {
