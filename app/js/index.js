@@ -13,6 +13,10 @@ $(document).ready(function(){
 
   $("#cover-text-wrapper, #title-text-wrapper").addClass("appear");
 
+  /*$("h2").visible(function(){ console.log(1);
+    $(this).addClass("appear");
+  });*/
+
   $("#menu-icon").click(function() {
     $(".sidenav").css("width", "250px");
     $("#overlay").show();
